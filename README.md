@@ -1,14 +1,36 @@
-<h1>REQUEST_CPP - EASY TO REQUEST</h1>
-<hr>
-<pre>...In development</pre>
-<hr>
-<pre>
-13/01/2025: Added simple_get function
-</pre>
-<hr>
-<h3>Installation instructions</h3>
-<pre>Put these files into your project (request_cpp.h, request_cpp.cpp)</pre>
-<h3>Libraries to add</h3>
-```javascript
-// Your code here
+# REQUEST_CPP
+
+Simple request library in c++
+
+## Installation
+Add the files (request_cpp.h, request_cpp.cpp) to your project
+```cpp
+#include <iostream>
+#include "request_cpp.h"
 ```
+
+## Usage
+
+```python
+import foobar
+
+# returns 'words'
+foobar.pluralize('word')
+
+# returns 'geese'
+foobar.pluralize('goose')
+
+# returns 'phenomenon'
+foobar.singularize('phenomena')
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

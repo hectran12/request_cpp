@@ -9,9 +9,6 @@
 <h3>Installation instructions</h3>
 <pre>Put these files into your project (request_cpp.h, request_cpp.cpp)</pre>
 <h3>Libraries to add</h3>
-```cpp
-#include <iostream>
-#include "request_cpp.h"
-
-using namespace std;
+```javascript
+// Your code here
 ```

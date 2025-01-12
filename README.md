@@ -1,4 +1,4 @@
-# REQUEST_CPP
+# REQUEST_CPP (In development...)
 
 Simple request library in c++
 
@@ -10,18 +10,16 @@ Add the files (request_cpp.h, request_cpp.cpp) to your project
 ```
 
 ## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+1. simple_get : perform a simple get request
+```cpp
+request obj2("https://google.com", "get");
+try {
+	obj2.setSilent(true); // This is to hide the download bar when executing exec curl
+	cout << "Content: " << obj2.simple_get() << endl;
+}
+catch (exception& e) {
+	cout << e.what() << endl;
+}
 ```
 
 ## Contributing

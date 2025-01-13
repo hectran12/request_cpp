@@ -28,7 +28,7 @@ catch (exception& e) {
 ```cpp
 try
 {
-	request req("https://kiemtraip.com", "get");
+	request req("https://google.com", "get");
 
 	cout << "Timeout of request: " << req.timeout << endl;
 

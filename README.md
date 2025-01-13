@@ -1,6 +1,8 @@
 # REQUEST_CPP (In development...)
 
 Simple request library in c++
+**Important: this library uses curl - a feature available on windows (or some other platforms that support it) to make requests. So it may not work on some operating systems. Consider before using.**
+
 
 ## Installation
 Add the files (request_cpp.h, request_cpp.cpp) to your project

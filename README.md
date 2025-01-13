@@ -42,6 +42,7 @@ catch (exception& e)
 	cout << e.what() << endl;
 }
 ```
+3. setHeaders, setHeader : ....
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first

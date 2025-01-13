@@ -2,7 +2,7 @@
 
 Simple request library in c++
 
-# Important (MUST READ BEFORE USING IN YOUR PROJECT)
+## Important (MUST READ BEFORE USING IN YOUR PROJECT)
 This library uses curl - a feature available on windows (or some other platforms that support it) to make requests. So it may not work on some operating systems. Consider before using.
 
 ## Installation

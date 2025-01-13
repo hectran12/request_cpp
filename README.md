@@ -24,7 +24,24 @@ catch (exception& e) {
 	cout << e.what() << endl;
 }
 ```
+2. setTimeout : Increase request execution time
+```cpp
+try
+{
+	request req("https://kiemtraip.com", "get");
 
+	cout << "Timeout of request: " << req.timeout << endl;
+
+	req.setTimeout(120); // increasing timeout to 120s
+
+	cout << "Timeout of request (after set): " << req.timeout << endl;
+
+}
+catch (exception& e)
+{
+	cout << e.what() << endl;
+}
+```
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first

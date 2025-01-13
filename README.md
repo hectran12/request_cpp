@@ -32,6 +32,8 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
+Note: Maybe I don't care, because this is my study project. I write for fun, so I have no intention of developing... :D
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)

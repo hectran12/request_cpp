@@ -44,6 +44,7 @@ catch (exception& e)
 ```
 3. Some methods to add headers
 ```cpp
+cout << "Test case 8: test headers" << endl;
 request req("https://google.com", "get");
 
 
@@ -80,7 +81,20 @@ req.setHeader("pragma", "no-cache");
 
 
 // view header method
+
+cout << "Header beforce remove called" << endl;
 req.viewHeaders();
+
+// remove header
+req.removeHeader("pragma"); // remove pragma header
+vector<string> names_to_remove = { "priority", "user-agent" };
+// set false if you want return the count of removed headers (success)
+// set true if you want return the count of removed headers (fall) 
+cout << "Total count remove success: " << req.removeHeaders(names_to_remove, false) << endl;
+
+cout << "Header after remove called" << endl;
+req.viewHeaders();
+
 ```
 ## Contributing
 

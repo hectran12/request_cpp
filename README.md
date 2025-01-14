@@ -42,7 +42,46 @@ catch (exception& e)
 	cout << e.what() << endl;
 }
 ```
-3. setHeaders, setHeader : ....
+3. Some methods to add headers
+```cpp
+request req("https://google.com", "get");
+
+
+// set header with set method
+
+// type 1 (set header with some set method has been defined)
+req.setAcceptCharsetHeader("utf-8");
+req.setAcceptEncodingHeader("gzip, deflate, br");
+req.setAcceptLanguageHeader("en-US,en;q=0.9,vi;q=0.8");
+req.setConnectionHeader("keep-alive");
+req.setHostHeader("google.com");
+req.setUpgradeInsecureRequestsHeader("1");
+
+
+// type 2 (set multi headers with vector<header>)
+header h;
+h.name = "priority";
+h.value = "1";
+
+header h2;
+h2.name = "user-agent";
+h2.value = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0";
+
+vector<header> headers;
+headers.push_back(h);
+headers.push_back(h2);
+
+req.setHeaders(headers);
+
+
+// type 3 (set one header)
+req.setHeader("pragma", "no-cache");
+
+
+
+// view header method
+req.viewHeaders();
+```
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first

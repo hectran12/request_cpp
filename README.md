@@ -96,6 +96,17 @@ cout << "Header after remove called" << endl;
 req.viewHeaders();
 
 ```
+4. get : perform get request, including set headers (different from simple_get)
+```
+request req("https://parseapi.com/useragent", "get");
+
+req.setUserAgentHeader("Mozilla/5.0 (iPhone; CPU iPhone OS 17_7_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Mobile/15E148 Safari/604.1");
+
+req.setSilent(true);
+
+cout << req.get() << endl;
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first

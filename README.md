@@ -115,9 +115,11 @@ catch (exception& e)
 ``
 
 
-## TO DO Today:
+## TO DO Today
 1. Optimize url for utf8 (15/01/2025) - unfinished
 2. Update post method (15/01/2025) - unfinished
+
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
